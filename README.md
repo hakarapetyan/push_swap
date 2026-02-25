@@ -39,3 +39,31 @@ Custom Tools: We are allowed to use your own Libft and ft_printf to help build t
 
 No Global Variables: All data must be passed through functions or structures.
 
+### 📦 Instructions
+Compilation
+To compile the program, run:
+```bash
+make
+```
+Usage
+Run the program by passing a list of integers as arguments. It will output the list of instructions:
+```bash
+$> ./push_swap 2 1 3 6 5 8
+sa
+pb
+pb
+ra
+...
+```
+Testing
+You can verify the result by using the checker tool provided by 42:
+```bash
+$> ARG="4 67 3 87 23"; ./push_swap $ARG | ./checker_OS $ARG
+OK
+```
+To count how many moves your algorithm used:
+```bash
+$> ARG="4 67 3 87 23"; ./push_swap $ARG | wc -l
+6
+```
+
